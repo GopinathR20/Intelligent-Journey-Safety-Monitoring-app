@@ -1,0 +1,19 @@
+<ion-content class="ion-padding">
+  <div class="journey-header">
+    <ion-item>
+      <ion-label position="stacked">Starting From</ion-label>
+      <ion-input placeholder="Current Location" [(ngModel)]="fromLocation"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Heading To</ion-label>
+      <ion-input placeholder="Enter Destination" [(ngModel)]="toLocation"></ion-input>
+    </ion-item>
+    <ion-button expand="block" 
+            (click)="startJourney()" 
+            (keyup.enter)="startJourney()"
+            role="button">
+  START TRACKING
+</ion-button>
+<div id="map" style="height: 300px; margin-top: 20px; border-radius: 15px;"></div>
+  </div>
+</ion-content>

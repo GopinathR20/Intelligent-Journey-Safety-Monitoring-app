@@ -1,0 +1,21 @@
+# --- Top Level Folders ---
+node_modules/
+nextstop_env/
+.venv/
+.dist/
+.idea/
+__pycache__/
+
+# --- Subfolder specific ---
+**/node_modules/
+**/target/
+**/dist/
+**/www/
+**/*.class
+**/*.pyc
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+package-lock.json
+package.json
